@@ -8,6 +8,15 @@ public class Main {
         IPrintDriver cp = new ConsolePrint();
         simInput = new MetricGUI();
 
+        Simulation simulator = new Simulation();
+        TrafficLight light1 = simInput.CreateTrafficLight(3, 1, 2, TrafficLight.Color.Red, "Light 1", 30);
+        TrafficLight light2 = simInput.CreateTrafficLight(3, 1, 2, TrafficLight.Color.Green, "Light 2", 50);
+        simulator.AddDynamicRoadItem(light1);
+        simulator.AddDynamicRoadItem(light2);
+        for (int i = 0; i <= 20; i++) {
+            simulator.Update(1);
+        }
+
 
 /*        Road Uptown = simInput.CreateRoad("Uptown", 0.0, -0.09, .180, Road.Heading.North);
         map.AddRoad(Uptown);
@@ -76,7 +85,6 @@ public class Main {
         vehicles.add(truck2);
 
         for (int i = 0; i < 11; i++) {
-
             for (Vehicle v : vehicles) {
                 v.UpdateSpeed(1);
                 String s = v.getClass().toString();

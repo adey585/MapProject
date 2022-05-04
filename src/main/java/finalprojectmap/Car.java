@@ -7,6 +7,8 @@ public class Car extends Vehicle {
 	protected void Decelerate(int secondsDelta) {
 		setCurrentSpeed(getCurrentSpeed() - Constants.DecRate * secondsDelta);
 	}
+	public void Update(int seconds) {
+	}
 
 	public Car() {
 		super();
@@ -14,6 +16,5 @@ public class Car extends Vehicle {
 	public Car(float speed, String direction, float location) {
 		super(speed, direction, location);
 	}
-
 
 }

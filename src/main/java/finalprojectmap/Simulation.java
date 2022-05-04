@@ -13,8 +13,10 @@ public class Simulation {
         DynamicRoadItems.add(dri);
     }
 
-    public void Update(int seconds)
-    {
+    public void Update(int seconds) {
+        for (DynamicRoadItem dri: DynamicRoadItems) {
+            dri.Update(seconds);
+        }
     }
 
 }

@@ -10,6 +10,7 @@ public class Constants {
     public static final double MpsToKph = 3.6;
     public static final double MetersToMiles = 0.000621371;
     public static final double MetersToKm = 0.001;
+
     public static final double CharMapSize = 40;
     public static final double WorldSize = 200.0;
 

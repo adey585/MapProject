@@ -19,10 +19,6 @@
       <groupId>com.google.code.gson</groupId>
       <artifactId>gson</artifactId>
       <version>2.9.0</version>
-<<<<<<< HEAD
-      <scope>compile</scope>
-=======
->>>>>>> a5f4c03 (Initial commit)
     </dependency>
 </dependencies>
 

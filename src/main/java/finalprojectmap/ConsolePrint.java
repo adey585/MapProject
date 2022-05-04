@@ -26,13 +26,10 @@ public class ConsolePrint implements IPrintDriver {
                 break;
             case East:
                 y = (int)CCy;
-                if (y >= 0 && y < Constants.CharMapSize)
-                {
-                    while (distance < CCRoadLength)
-                    {
+                if (y >= 0 && y < Constants.CharMapSize) {
+                    while (distance < CCRoadLength) {
                         x = (int)(CCx + distance);
-                        if (x >= 0 && x < Constants.CharMapSize)
-                        {
+                        if (x >= 0 && x < Constants.CharMapSize) {
                             cm.map[y][x] = '-';
                             cm.map[y + 2][x] = '-';
                             cm.map[y + 4][x] = '-';

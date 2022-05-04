@@ -21,5 +21,8 @@ public class MetricGUI extends GUI {
 	public StopSign CreateStopSign(double location) {
 		return new StopSign(location/Constants.MetersToKm);
 	}
+	public TrafficLight CreateTrafficLight(int rTime, int yTime, int gTime, TrafficLight.Color lit, String name, double location) {
+		return new TrafficLight(rTime, yTime, gTime, lit, name, location/Constants.MetersToKm);
+	}
 }
 

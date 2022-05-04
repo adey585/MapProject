@@ -25,5 +25,7 @@ public class Truck extends Vehicle {
 	public int getLoadWeight() {
 		return loadWeight;
 	}
+	public void Update(int seconds) {
+	}
 }
 
