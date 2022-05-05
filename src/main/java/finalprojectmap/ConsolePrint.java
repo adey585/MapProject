@@ -9,7 +9,7 @@ public class ConsolePrint implements IPrintDriver {
         int CCRoadLength = Conversions.WClengthToCClength(road.GetLength());
         switch (road.GetHeading()) {
             case North:
-                x = (int)CCx;
+                x = CCx;
                 if (x >= 0 && x < Constants.CharMapSize) {
                     while (distance < CCRoadLength) {
                         y = (int)(CCy - distance);
@@ -23,9 +23,9 @@ public class ConsolePrint implements IPrintDriver {
                 }
                 break;
             case South:
-                break;
+                //break;
             case East:
-                y = (int)CCy;
+                y = CCy;
                 if (y >= 0 && y < Constants.CharMapSize) {
                     while (distance < CCRoadLength) {
                         x = (int)(CCx + distance);
@@ -39,12 +39,11 @@ public class ConsolePrint implements IPrintDriver {
                 }
                 break;
             case West:
-            break;
+           //break;
             default:
-                break;
+                //break;
         }
 }
     public void PrintCar(Car car, Object o) {
     }
-
 }

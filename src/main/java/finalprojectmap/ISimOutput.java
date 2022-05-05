@@ -1,5 +1,5 @@
 package finalprojectmap;
 public interface ISimOutput {
-    double GetSpeed(Vehicle v);
 
+    double GetSpeed(Vehicle v);
 }

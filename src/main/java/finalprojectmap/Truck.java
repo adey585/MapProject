@@ -1,11 +1,14 @@
 package finalprojectmap;
 
 public class Truck extends Vehicle {
+
 	// loadWeight is an integer in tons
 	private int loadWeight;
+
 	public Truck(int weight) {
 		loadWeight = weight;
 	}
+
 	protected void Accelerate(int secondsDelta) {
 		if (loadWeight <= 5)
 			setCurrentSpeed(getCurrentSpeed() + Constants.AccRateEmpty * secondsDelta);
@@ -19,12 +22,14 @@ public class Truck extends Vehicle {
 		else
 			setCurrentSpeed(getCurrentSpeed() - Constants.DecRateFull * secondsDelta);
 	}
-	public void SetLoadWeight(int weight) {
+
+/*	public void SetLoadWeight(int weight) {
 		loadWeight = weight;
 	}
 	public int getLoadWeight() {
 		return loadWeight;
-	}
+	}*/
+
 	public void Update(int seconds) {
 	}
 }

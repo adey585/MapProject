@@ -29,21 +29,18 @@ public class TrafficLight extends DynamicRoadItem {
 
     public void Update(int seconds) {
         timeOn += seconds;
-        System.out.println("-> " + name + " Color: " + lit);
+        System.out.println("-> Change traffic " + name + " Color to: " + lit);
         if ((lit == Color.Red) && (timeOn >= redTime)) {
             lit = Color.Green;
             timeOn = 0;
-            return;
         }
         else if ((lit == Color.Yellow) && (timeOn >= yellowTime)) {
             lit = Color.Red;
             timeOn = 0;
-            return;
         }
         else if ((lit == Color.Green) && (timeOn >= greenTime)) {
             lit = Color.Yellow;
             timeOn = 0;
-            return;
         }
     }
 }

@@ -16,19 +16,24 @@ public abstract class Vehicle extends DynamicRoadItem {
 	// Method used to cause the car to slow down
 	protected abstract void Decelerate(int secondsDelta);
 
+
 	// Method used to turn the car a certain number of degrees in a certain direction
 	public void Turn(String direction, double degrees) {
 	}
+
 	public Vehicle() {
 	}
+
 	public Vehicle(double speed, String direction, double location) {
 		this.currentSpeed = speed;
 		this.currentDirection = direction;
 		this.currentLocation = location;
 	}
+
 	public void setDesiredSpeed(double mps) {
 		desiredSpeed = mps;
 	}
+
 	protected void setCurrentSpeed(double speed) {
 		if(currentSpeed <= speed) {
 			if (speed > desiredSpeed)
@@ -43,6 +48,7 @@ public abstract class Vehicle extends DynamicRoadItem {
 				currentSpeed = speed;
 		}
 	}
+
 	public void updateSpeed(int seconds) {
 		if (currentSpeed > desiredSpeed)
 			Decelerate(seconds);
@@ -52,16 +58,21 @@ public abstract class Vehicle extends DynamicRoadItem {
 	public void setCurrentDirection(String direction) {
 		currentDirection = direction;
 	}
+
 	public void setCurrentLocation(double location) {
 		currentLocation = location;
 	}
+
 	public double getCurrentSpeed() {
 		return currentSpeed;
 	}
+
 	public String getCurrentDirection() {
 		return currentDirection;
 	}
+
 	public double getCurrentLocation() {
 		return currentLocation;
 	}
+
 }

@@ -1,4 +1,4 @@
 package finalprojectmap;
 
-public class Intersection extends StaticRoadItem {
-}
+/*public class Intersection extends StaticRoadItem {
+}*/

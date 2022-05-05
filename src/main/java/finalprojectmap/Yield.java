@@ -1,4 +1,4 @@
 package finalprojectmap;
 
-public class Yield extends StaticRoadItem {
-}
+/*public class Yield extends StaticRoadItem {
+}*/

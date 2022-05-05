@@ -5,5 +5,4 @@ public abstract class DynamicRoadItem extends RoadItem {
     }
 
     public abstract void Update(int secondsDelta);
-
 }

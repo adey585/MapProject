@@ -15,7 +15,6 @@ public class Road {
         West
     }
 
-    //private RoadItem head;
     private String Name;
     private double Length;
     private double XLocation;
@@ -25,9 +24,6 @@ public class Road {
     public static int NumOfRoads = 0;
 
     public Road(String streetName, double locX, double locY, double len, Heading hdg) {
-        //head = new RoadItem();
-        //head.SetPrevious(null);
-        //head.SetNext(null);
         Name = streetName;
         Length = len;
         XLocation = locX;
@@ -49,30 +45,19 @@ public class Road {
         return YLocation;
     }
 
+
     public Heading GetHeading() {
         return Heading;
     }
 
-    public String GetRoadName() {
+
+/*    public String GetRoadName() {
         return Name;
     }
 
-/*    public void AddRoadItem(RoadItem roadItem) {
-        roadItem.SetCurrentRoad(this);
-        RoadItem currentItem = head;
-        while (currentItem.GetNext() != null) {
-            currentItem = currentItem.GetNext();
-            if (currentItem.GetMileMarker() > roadItem.GetMileMarker()) {
-                InsertNewItemBefore(currentItem, roadItem);
-                return;
-            }
-        }
-        InsertNewItemAfter(currentItem, roadItem);
-    }*/
-
     public void AddRoadItem(Object roadItem) {
         RoadItems.add(roadItem);
-    }
+    }*/
 
     public void Print(IPrintDriver print, Object o) {
         print.PrintRoad(this, o);

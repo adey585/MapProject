@@ -1,6 +1,6 @@
 package finalprojectmap;
 
-public class RoadItemsElement {
+/*public class RoadItemsElement {
     private RoadItem roadItem;
     private RoadItemsElement prevRoadItem;
     private RoadItemsElement nextRoadItem;
@@ -28,4 +28,4 @@ public class RoadItemsElement {
     }
     public void addNew(RoadItem roadItem) {
     }
-}
+}*/

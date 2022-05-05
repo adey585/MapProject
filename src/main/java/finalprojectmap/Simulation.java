@@ -18,5 +18,4 @@ public class Simulation {
             dri.Update(seconds);
         }
     }
-
 }

@@ -1,6 +1,8 @@
 package finalprojectmap;
 import java.io.IOException;
+
 public class Main {
+
     public static void main(String[ ] args) throws IOException {
 
         GUI simInput;
@@ -9,8 +11,8 @@ public class Main {
         simInput = new MetricGUI();
 
         Simulation simulator = new Simulation();
-        TrafficLight light1 = simInput.CreateTrafficLight(3, 1, 2, TrafficLight.Color.Red, "Light 1", 30);
-        TrafficLight light2 = simInput.CreateTrafficLight(3, 1, 2, TrafficLight.Color.Green, "Light 2", 50);
+        TrafficLight light1 = simInput.CreateTrafficLight(3, 1, 2, TrafficLight.Color.Red, "light 1", 30);
+        TrafficLight light2 = simInput.CreateTrafficLight(3, 1, 2, TrafficLight.Color.Green, "light 2", 50);
         simulator.AddDynamicRoadItem(light1);
         simulator.AddDynamicRoadItem(light2);
         for (int i = 0; i <= 20; i++) {
@@ -92,12 +94,11 @@ public class Main {
             }
         }*/
     }
-    public double GetSpeed(Vehicle v) {
+    /*public double GetSpeed(Vehicle v) {
         return v.getCurrentSpeed() * Constants.MpsToMph;
-    }
+    }*/
     public void SetSpeedLimit(Vehicle v, double speed) {
         v.setDesiredSpeed(speed/Constants.MpsToMph);
     }
-
 }
 

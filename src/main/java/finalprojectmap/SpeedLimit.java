@@ -1,6 +1,7 @@
 package finalprojectmap;
 
 public class SpeedLimit extends StaticRoadItem {
+
     protected double SpeedLimit;
 
     public SpeedLimit(double speed, double location) {
@@ -8,8 +9,9 @@ public class SpeedLimit extends StaticRoadItem {
         SpeedLimit = speed;
     }
 
-    public double getSpeedLimit() {
+
+/*    public double getSpeedLimit() {
         return SpeedLimit;
-    }
+    }*/
 
 }
